@@ -1,0 +1,11 @@
+Log Locally and Remotely with rsyslogd
+
+Link:
+
+https://serverfault.com/questions/181371/log-locally-and-remotely-with-rsyslogd
+
++++
+
+*.* @logremotehost
+*.* /var/log/messages
+
