@@ -1,0 +1,11 @@
+Authenticate to GitHub using Personal Access Token:
+
+Link:
+
+https://stackoverflow.com/questions/18935539/authenticate-with-github-using-a-token
+
+Code:
+
+git remote remove origin
+git remote add origin https://[TOKEN]@github.com/[USER]/[REPO]
+git push
