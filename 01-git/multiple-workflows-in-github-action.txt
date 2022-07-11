@@ -1,0 +1,32 @@
+Multiple wordflows in github action
+
+Link:
+
+https://stackoverflow.com/questions/57115520/can-i-have-multiple-github-actions-workflow-files
+
+You can have multiple files in the .github/workflows folder. 
+All files will be read and run as independent tests. 
+The 'on' parameter on each file will tell when it must be called.
+
+Following your idea you could have:
+
+dev.workflow.yml - To run some kind of testing maybe (only on dev branch, when push)
+
+name: Dev Workflow - Test and check thing
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  ...
+
+prod.workflow.yml- To build and deploy your project (only on master branch, when a PR is closed)
+
+name: Master Workflow - Build and deploy to production
+on:
+  pull_request:
+    types: closed
+    branches:
+      - master
+jobs:
+  ...
