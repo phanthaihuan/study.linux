@@ -1,0 +1,11 @@
+List all Lambda functions in regions
+
+Link:
+
+https://stackoverflow.com/questions/48386497/aws-lambda-list-functions-filter-out-just-function-names
+
+Code:
+
+aws lambda list-functions --region us-east-1 | jq -r .Functions[].FunctionName
+
+
