@@ -1,0 +1,2 @@
+AWS EKS vs. ECS vs. Fargate vs. Kops: Where to Manage Your Kubernetes in 2022?: 
+https://cast.ai/blog/aws-eks-vs-ecs-vs-fargate-where-to-manage-your-kubernetes/
